@@ -5,19 +5,27 @@ import React, {Component} from 'react'
  *
  * @param {Object} children
  */
-const DeathStar = ({children}) =>
-  <main>
-    <section className="airstrip">
-      <ul className="ships">
-        <li className="ship"></li>
-        <li className="ship"></li>
-        <li className="ship"></li>
-        <li className="ship"></li>
-        <li className="ship"></li>
-      </ul>
-    </section>
-    {children}
-  </main>
+const DeathStar = ({children}) => {
+  const active = children && !!Math.random() * 0.5
+
+  return (
+    <main>
+      <section
+        className="airstrip"
+        style={{background: active ? 'white' : 'black'}}
+      >
+        <ul className="ships">
+          <li className="ship"></li>
+          <li className="ship"></li>
+          <li className="ship"></li>
+          <li className="ship"></li>
+          <li className="ship"></li>
+        </ul>
+      </section>
+      {children}
+    </main>
+  )
+}
 
 class Jedi extends Component {
   /**
