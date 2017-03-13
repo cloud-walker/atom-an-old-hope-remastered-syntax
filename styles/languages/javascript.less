@@ -1,3 +1,13 @@
+.syntax--js {
+  &.syntax--storage {
+    &.syntax--class,
+    &.syntax--extends,
+    &.syntax--modifier {
+      color: @color-keyword;
+    }
+  }
+}
+
 .syntax--jsx {
   &.syntax--assignment {
     color: @color-text;

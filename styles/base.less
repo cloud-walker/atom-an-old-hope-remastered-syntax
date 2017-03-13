@@ -3,6 +3,7 @@
 atom-text-editor {
   background-color: @color-background;
   color: @color-text;
+  font-weight: @font-weight-thin;
 
   .cursor {
     color: @color-cursor;
@@ -22,11 +23,20 @@ atom-text-editor {
   }
 }
 
+.syntax--variable {
+  color: lighten(@color-text, 10%);
+  font-weight: @font-weight-normal;
+}
+
 .syntax--keyword {
   color: @color-keyword;
 
   &.syntax--operator {
     color: @color-operator;
+  }
+
+  &.syntax--unit {
+    color: @color-constant;
   }
 }
 
@@ -40,6 +50,14 @@ atom-text-editor {
   }
 }
 
+/**
+ * HTML attributes
+ * CSS classnames
+ */
+.syntax--attribute-name {
+  color: @color-function;
+}
+
 .syntax--constant {
   color: @color-constant;
 }
@@ -50,9 +68,29 @@ atom-text-editor {
 
 .syntax--comment {
   color: @color-comment;
+
+  .syntax--class,
+  .syntax--name,
+  .syntax--variable {
+    color: lighten(@color-comment, 10%);
+    font-weight: @font-weight-normal
+  }
+
+  .syntax--class,
+  .syntax--name {
+    font-style: italic;
+  }
 }
 
 .syntax--illegal.syntax--invalid {
   background-color: @color-error;
   color: @color-background;
+  font-weight: @font-weight-normal;
+}
+
+.syntax--function {
+  &.syntax--name,
+  &.syntax--console {
+    color: @color-function;
+  }
 }
