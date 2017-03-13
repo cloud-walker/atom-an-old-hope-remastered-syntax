@@ -44,6 +44,10 @@ class Jedi extends Component {
     this.name = name
   }
 
+  sayHi() {
+    console.log(`Help me ${this.name}...`)
+  }
+
   /**
    * Ask Ben for advice.
    *
