@@ -1,5 +1,13 @@
 import React, {Component} from 'react'
 
+import {areCannonsReady} from './x-wing-arsenal'
+
+const xWing = async () => {
+  await areCannonsReady()
+
+  console.log('x-wing firing')
+}
+
 /**
  * DeathStar component
  *
