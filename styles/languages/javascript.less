@@ -8,10 +8,13 @@
   }
 
   &.syntax--function {
-    .syntax--arrow,
-    .syntax--assignment + .syntax--type {
+    .syntax--arrow {
       color: @color-keyword;
     }
+  }
+
+  &.syntax--arrow .syntax--storage.syntax--type {
+    color: @color-keyword;
   }
 }
 

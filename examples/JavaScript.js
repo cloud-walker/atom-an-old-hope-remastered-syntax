@@ -87,4 +87,4 @@ class Jedi extends Component {
   }
 }
 
-export default Jedi
+export default async () => Jedi
