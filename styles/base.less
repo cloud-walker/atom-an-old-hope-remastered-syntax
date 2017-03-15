@@ -3,7 +3,6 @@
 atom-text-editor {
   background-color: @color-background;
   color: @color-text;
-  font-weight: @font-weight-thin;
 
   .cursor {
     color: @color-cursor;
@@ -25,19 +24,22 @@ atom-text-editor {
 
 .syntax--variable {
   color: lighten(@color-text, 10%);
-  font-weight: @font-weight-normal;
 }
 
 .syntax--keyword {
   color: @color-keyword;
 
-  &.syntax--operator {
-    color: @color-operator;
-  }
+  // &.syntax--operator:not(.syntax--accessor) {
+  //   color: @color-operator;
+  // }
 
   &.syntax--unit {
     color: @color-constant;
   }
+}
+
+.syntax--operator {
+  color: @color-operator;
 }
 
 .syntax--tag {
