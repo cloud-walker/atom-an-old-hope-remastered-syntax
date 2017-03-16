@@ -26,12 +26,13 @@ atom-text-editor {
   color: lighten(@color-text, 10%);
 }
 
+.syntax--storage,
 .syntax--keyword {
   color: @color-keyword;
+}
 
-  &.syntax--unit {
-    color: @color-constant;
-  }
+.syntax--unit {
+  color: @color-constant;
 }
 
 .syntax--operator {
