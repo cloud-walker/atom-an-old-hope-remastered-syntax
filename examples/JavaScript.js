@@ -2,10 +2,44 @@ import React, {Component} from 'react'
 
 import {areCannonsReady} from './x-wing-arsenal'
 
+let Endor
+var Lasers
+
+const c1code = /\hbzzz-brrr$/
+
+const foo = function bar() {
+  return 'baz'
+}
+
+function foo(str, done) {
+  console.log(str)
+
+  done()
+}
+
 const xWing = async () => {
   await areCannonsReady()
 
   console.log('x-wing firing')
+}
+
+const c1p8 = {
+  openDoor: () => {
+    const firstCombination = {
+      bzzz: 's32d2321ds',
+      tzzz: 124432,
+    }
+
+    const secondCombination = {
+      bzzz: 'ajkla2d1',
+      tzzz: 999323,
+    }
+
+    return {
+      ...firstCombination,
+      ...secondCombination,
+    }
+  }
 }
 
 /**
@@ -88,3 +122,12 @@ class Jedi extends Component {
 }
 
 export default async () => Jedi
+
+export default ({
+  Yoda,
+  Luke,
+}) => {
+  return `${Luke} brings ${Yoda} on his shoulders.`
+}
+
+module.exports = 'wooot'
