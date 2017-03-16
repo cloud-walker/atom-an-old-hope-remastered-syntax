@@ -20,6 +20,15 @@ atom-text-editor {
   .invisible-character {
     color: @color-invisibles;
   }
+
+  .line-number {
+    color: @color-gray-dark;
+
+    &.cursor-line {
+      opacity: 0.8;
+      color: @color-text;
+    }
+  }
 }
 
 .syntax--variable {
