@@ -17,6 +17,10 @@ function foo(str, done) {
   done()
 }
 
+async function foo () {
+  return 'bar'
+}
+
 const xWing = async () => {
   await areCannonsReady()
 
