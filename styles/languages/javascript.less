@@ -1,4 +1,10 @@
 .syntax--js {
+
+  /**
+   * Syntax keywords:
+   * - function, =>
+   * - class, extends
+   */
   &.syntax--storage {
     &.syntax--class,
     &.syntax--extends,
@@ -12,12 +18,18 @@
     color: @color-keyword;
   }
 
+  // const, let, var
   &.syntax--storage.syntax--type {
     color: @color-keyword;
   }
 
-  &.syntax--regexp {
+  // Regexp
+  .syntax--regexp {
     color: @color-regexp;
+
+    .syntax--string {
+      color: darken(@color-regexp, 20%);
+    }
   }
 }
 
