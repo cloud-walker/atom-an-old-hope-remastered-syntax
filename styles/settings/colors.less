@@ -13,6 +13,7 @@
 
 // Color abstractions
 @color-text: @color-gray-lighter;
+@color-variable: lighten(@color-text, 10%);
 @color-cursor: lighten(@color-c1p8, 5%);
 @color-string: @color-c1p8;
 @color-background: @color-gray-darker;
@@ -21,6 +22,7 @@
 @color-keyword: @color-yoda;
 @color-constant: @color-luke;
 @color-regexp: @color-luke;
+@color-regexp-punctuation: darken(@color-regexp, 20%);
 @color-comment: @color-gray;
 @color-operator: @color-vader;
 @color-tag: @color-vader;

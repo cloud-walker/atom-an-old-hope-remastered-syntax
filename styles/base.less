@@ -72,7 +72,7 @@ atom-text-editor {
   .syntax--class,
   .syntax--name,
   .syntax--variable {
-    color: lighten(@color-comment, 10%);
+    color: @color-variable;
     font-weight: @font-weight-normal;
   }
 
@@ -80,6 +80,10 @@ atom-text-editor {
   .syntax--name {
     font-style: italic;
   }
+}
+
+.syntax--object .syntax--unquoted {
+  color: @color-variable;
 }
 
 .syntax--illegal.syntax--invalid {
