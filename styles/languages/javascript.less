@@ -2,19 +2,22 @@
   &.syntax--storage {
     &.syntax--class,
     &.syntax--extends,
-    &.syntax--modifier {
+    &.syntax--modifier,
+    &.syntax--function {
       color: @color-keyword;
     }
   }
 
-  &.syntax--function {
-    .syntax--arrow {
-      color: @color-keyword;
-    }
-  }
-
-  &.syntax--arrow .syntax--storage.syntax--type {
+  &.syntax--function .syntax--type:not(.syntax--console) {
     color: @color-keyword;
+  }
+
+  &.syntax--storage.syntax--type {
+    color: @color-keyword;
+  }
+
+  &.syntax--regexp {
+    color: @color-regexp;
   }
 }
 
