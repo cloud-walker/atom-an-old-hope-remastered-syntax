@@ -1,0 +1,19 @@
+.syntax--markup {
+  &.syntax--bold {
+    font-weight: @font-weight-bold;
+  }
+
+  &.syntax--italic {
+    font-style: italic;
+  }
+
+  &.syntax--bold,
+  &.syntax--italic,
+  &.syntax--strike {
+    color: @color-tag;
+  }
+
+  &.syntax--heading {
+    color: @color-keyword;
+  }
+}
