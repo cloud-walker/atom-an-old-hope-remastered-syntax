@@ -125,6 +125,22 @@ class Jedi extends Component {
   }
 }
 
+while (true) {
+
+}
+
+for (var i = 0; i < array.length; i++) {
+  array[i]
+}
+
+switch (expression) {
+  case expression:
+
+    break;
+  default:
+
+}
+
 export default async () => Jedi
 
 export default ({
