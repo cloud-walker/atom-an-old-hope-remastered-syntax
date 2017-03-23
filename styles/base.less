@@ -32,7 +32,11 @@ atom-text-editor {
 }
 
 .syntax--variable {
-  color: lighten(@color-text, 10%);
+  color: @color-variable;
+}
+
+.syntax--list.syntax--variable {
+  color: @color-constant;
 }
 
 .syntax--storage,
