@@ -23,6 +23,7 @@
 .light-saber--red {
   background-color: red;
   err-bzzz: wooot;
+  font-size: calc(1rem + 10vw);
 }
 
 @media screen and (max-width: 320px) {
